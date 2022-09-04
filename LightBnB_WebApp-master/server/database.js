@@ -1,9 +1,7 @@
-const properties = require("./json/properties.json");
-const users = require("./json/users.json");
 const { Pool } = require("pg");
 const pool = new Pool({
   user: "labber",
-  password: "123",
+  password: "labber",
   host: "localhost",
   database: "lightbnb",
 });
@@ -17,8 +15,8 @@ const pool = new Pool({
  */
 const getUserWithEmail = function (email) {
   let dbQuery = ` SELECT * FROM users WHERE email = $1;`;
-  let emails = email.toLowerCase();
-  let value = [emails];
+  const emails = email.toLowerCase();
+  const value = [emails];
   return pool
     .query(dbQuery, value)
     .then((result) => {
@@ -41,8 +39,8 @@ exports.getUserWithEmail = getUserWithEmail;
  */
 const getUserWithId = function (id) {
   let dbQuery = ` SELECT * FROM users WHERE id = $1;`;
-  let ids = Number(id);
-  let value = [ids];
+  const ids = Number(id);
+  const value = [ids];
   return pool
     .query(dbQuery, value)
     .then((result) => {
@@ -91,7 +89,7 @@ WHERE reservations.guest_id = $1
 GROUP BY properties.id, reservations.id
 ORDER BY reservations.start_date
 LIMIT $2;`;
-  let value = [guest_id, limit];
+  const value = [guest_id, limit];
   return pool
     .query(dbQuery, value)
     .then((res) => res.rows)
