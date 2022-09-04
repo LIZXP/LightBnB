@@ -5,26 +5,24 @@ Lighthouse BnB is an app that will revolutionize the travel industry. It will al
 ## Page Demos
 
 !["Desktop View"](https://github.com/LIZXP/tweeter/blob/master/docs/typing.PNG)
-!["Desktop View"](https://github.com/LIZXP/tweeter/blob/master/docs/desktopversion.PNG)
-!["Mobile Device View"](https://github.com/LIZXP/tweeter/blob/master/docs/mobileversion.PNG)
 
 ## Getting Started
 
-- Fork this repository, then clone your fork of this repository.
-- Install dependencies using the npm install command.
-- Start the web server using the npm run local command. The app will be served at http://localhost:8080/.
-- Go to http://localhost:8080/ in your browser.
+- Cd into the LightBnB_WebApp directory
+- Install any dependencies with npm i
+- Install node postgres with npm install pg
+- Run the 01_schema.sql to create the tables
+- Run the 01_seeds.sql to insert the datasets
+- Run the app npm run local and view it at localhost:3000
 
 ## Dependencies
 
+- Bcrypt
+- Body-parser
+- Cookie-session
 - Express
-- Node 5.10.x or above
-- body-parser
-- md5
-
-## Dev-Dependencies
-
-- nodemon
+- Nodemon
+- postgresSQL
 
 ## Project Structure
 
