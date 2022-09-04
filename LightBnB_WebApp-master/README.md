@@ -4,7 +4,7 @@ Lighthouse BnB is an app that will revolutionize the travel industry. It will al
 
 ## Page Demos
 
-!["Desktop View"](https://github.com/LIZXP/tweeter/blob/master/docs/typing.PNG)
+!["Desktop View"](https://github.com/LIZXP/LightBnB/blob/master/pictures/Capture.PNG)
 
 ## Getting Started
 
