@@ -10,7 +10,7 @@ Lighthouse BnB is an app that will revolutionize the travel industry. It will al
 
 - Install node postgres with npm install pg
 - Run the 01_schema.sql to create the tables
-- Run the 01_seeds.sql to insert the datasets
+- Run the 01_seeds.sql and 02_seeds.sql to insert the datasets
 - Cd into the LightBnB_WebApp directory
 - Install any dependencies with npm i
 - Run the app npm run local and view it at localhost:3000
